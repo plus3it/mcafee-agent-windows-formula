@@ -7,3 +7,14 @@ install-mcafee-agent:
   pkg.installed:
     - name: 'McAfee Agent'
     - allow_updates: True
+    - require_in:
+      - service: mcafee-agent-macmnsvc-service
+      - service: mcafee-agent-masvc-service
+
+mcafee-agent-macmnsvc-service:
+  service.running:
+    - name: 'macmnsvc'
+
+mcafee-agent-masvc-service:
+  service.running:
+    - name: 'masvc'
