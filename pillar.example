@@ -1,4 +1,4 @@
-mcafee-agent-windows:
+mcafee-agent:
 
 
   #############################################################
@@ -9,8 +9,8 @@ mcafee-agent-windows:
 
   # `package` is the name of the winrepo package containing the
   # mcafee agent.
-  #package: 'McAfee Agent'
-  
+  #package: 'mcafee-agent'
+
   # `version` is the version of the agent to install. the specified version
   # must be present in the winrepo package definition.
   #version: ''
