@@ -27,24 +27,24 @@ This formula supports configuration via pillar for the name of the winrepo
 package and the version of the package to install.
 
 
-### mcafee-agent-windows:package
+### mcafee-agent:package
 
 The `package` parameter is the name of the package as defined in the winrepo
 package definition.
 
 >**Required**: `False`
 
->**Default**: `'McAfee Agent'`
+>**Default**: `'mcafee-agent'`
 
 **Example**:
 
 ```
-mcafee-agent-windows:
-  package: 'McAfee Agent'
+mcafee-agent:
+  package: 'mcafee-agent'
 ```
 
 
-### mcafee-agent-windows:version
+### mcafee-agent:version
 
 The `version` parameter is the version of the package as defined in the
 winrepo package definition.
@@ -56,6 +56,6 @@ winrepo package definition.
 **Example**:
 
 ```
-mcafee-agent-windows:
+mcafee-agent:
   version: '4.8.2003'
 ```

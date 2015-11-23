@@ -1,16 +1,16 @@
-mcafee-agent-windows:
+mcafee-agent:
+  lookup:
 
+    #############################################################
+    #
+    # Optional parameters for the mcafee-agent-windows-formula
+    #
+    #############################################################
 
-  #############################################################
-  #
-  # Optional parameters for the mcafee-agent-windows-formula
-  #
-  #############################################################
+    # `package` is the name of the winrepo package containing the
+    # mcafee agent.
+    #package: 'mcafee-agent'
 
-  # `package` is the name of the winrepo package containing the
-  # mcafee agent.
-  #package: 'McAfee Agent'
-  
-  # `version` is the version of the agent to install. the specified version
-  # must be present in the winrepo package definition.
-  #version: ''
+    # `version` is the version of the agent to install. the specified version
+    # must be present in the winrepo package definition.
+    #version: ''

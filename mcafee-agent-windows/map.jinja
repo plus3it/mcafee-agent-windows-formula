@@ -1,15 +1,11 @@
 # Initialize a map of default values
-{% set default = {
-    'package' : 'McAfee Agent',
-    'version' : '',
-} %}
+{% load_yaml as defaults %}
+package: 'mcafee-agent'
+version: ''
+{% endload %}
 
 # Define the mcafee map, merging pillar and default values
-{% set mcafee = {
-    'package' : salt['pillar.get'](
-        'mcafee-agent-windows:package',
-        default.package),
-    'version' : salt['pillar.get'](
-        'mcafee-agent-windows:version',
-        default.version),
-} %}
+{% set mcafee = salt['pillar.get'](
+  'mcafee-agent:lookup',
+  default=defaults,
+  merge=True) %}
