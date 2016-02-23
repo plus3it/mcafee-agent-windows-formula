@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/plus3it/mcafee-agent-windows-formula.svg)](https://travis-ci.org/plus3it/mcafee-agent-windows-formula)
+
 # mcafee-agent
 
 This salt formula will install McAfee Agent, for use with a McAfee ePolicy
